@@ -3,7 +3,7 @@ package isp.lab9.exercise1;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Sensor temperatureSensor = new TemperatureSensor();
         Sensor humiditySensor = new HumiditySensor();
 

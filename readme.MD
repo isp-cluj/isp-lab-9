@@ -7,4 +7,5 @@ Initially the sensors are disabled and when the Controller decide to start them,
 The controller can stop and start sensors any time.
 
 1. Implement the above description in a java program
-2. Test the functionality in `main()` method
+2. Test the functionality in `main()` method<br>
+**Note** you should use Observer design pattern  
