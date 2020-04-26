@@ -16,11 +16,11 @@ class Observable {
       notifyAllObservers(event);
    }
  
-   public void register(Observer observer){
+   public void register(Observer observer) {
       observers.add(observer);		
    }
  
-   private void notifyAllObservers(Object event){
+   private void notifyAllObservers(Object event) {
       for (Observer observer : observers) {
          observer.update(event);
       }
@@ -33,19 +33,19 @@ interface Observer {
  
 //usage example
  
-class Alarm extends Observable{
-    void startAlarm(){
+class Alarm extends Observable {
+    void startAlarm() {
         System.out.println("Alarm has been started!");
         this.changeState("START");
     }
  
-    void stopAlarm(){
+    void stopAlarm() {
         System.out.print("Alarm has been stopped!");
         this.changeState("STOP");
     }
 }
  
-class AlarmMonitor implements Observer{
+class AlarmMonitor implements Observer {
  
     @Override
     public void update(Object event) {
